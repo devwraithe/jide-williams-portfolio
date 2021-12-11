@@ -1,6 +1,5 @@
 // import components
 import Image from "next/image";
-import Link from "next/Link";
 import Layout from "../components/layout/layout";
 import Header from "../components/header/header";
 // import styling
