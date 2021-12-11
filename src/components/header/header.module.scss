@@ -8,10 +8,10 @@
 
   .wrap {
     @include media-max(md-max) {
-      padding: 9em 0.4em;
+      padding: 9em 0.4em 6em 0.4em;
     }
     @include media-min(lg-min) {
-      padding: 8em 3em;
+      padding: 8em 3em 4em 3em;
     }
   }
 

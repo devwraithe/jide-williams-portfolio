@@ -20,7 +20,7 @@ const Projects = (props) => {
       description:
         "Fybrr is a full-stack cloud infrastructure for developers and startups in Africa to launch software products quicker and safer. With Fybrr, developers can efficiently deploy, host, scale and secure applications without worrying about infrastructure. Fybrr is highly adaptable and it is easy for users of other platforms to access and control their infrastructure from Fybrr.",
       role: "Software Product Manager/Product Owner responsible for ideation, prototyping, process documentation and the end-to-end development lifecycle.",
-      tags: "SaaS/Web Design Tool | 2021/2022",
+      tags: "SaaS/Web Design Tool",
       img: fybrr,
       alt: "fybrr web and saas project",
       deliverables: [
@@ -36,7 +36,7 @@ const Projects = (props) => {
       description:
         "Storemapper is a DIY SaaS Store locator web application that helps your customers find your products or services across various locations anywhere in the world. It can be installed in minutes with no coding required.",
       role: "Product Manager playing a hybrid role that cuts across the following roles; Scrum Master, Product Owner and Project Manager. I oversee the daily activities and all teams holistically while ensuring that the metrics stay green.",
-      tags: "Software as a Service | 2021/2022",
+      tags: "Software as a Service (SaaS)",
       img: storeMapper,
       alt: "storemapper saas project",
       deliverables: [
@@ -54,7 +54,7 @@ const Projects = (props) => {
       description:
         "Algorand is a crypto-currency wallet, built by the team that created the Algorand Blockchain to securely manage Algorand assets while earning rewards",
       role: "Freelance Product Manager that worked on the customer onboarding process for new and existing users to make it easier to personalize their wallets.",
-      tags: "Crypto | Web 3.0 | 2021",
+      tags: "Crypto | Web 3.0",
       img: algorandWallet,
       alt: "storemapper saas project",
       deliverables: [

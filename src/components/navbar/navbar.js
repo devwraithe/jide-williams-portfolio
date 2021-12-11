@@ -64,7 +64,7 @@ const Navbar = () => {
           </Link>
         </span>
         <span className={styles.link}>
-          <Link href="/events">
+          {/* <Link href="/events">
             <a
               className={
                 router.pathname == "/events"
@@ -74,16 +74,55 @@ const Navbar = () => {
             >
               Events
             </a>
+          </Link> */}
+          <Link
+            href="https://eventbrite.ca/o/jide-williams-17298305413"
+            passHref
+            target="_blank"
+            rel="noreferrer"
+          >
+            <a
+              className={
+                router.pathname ==
+                "https://eventbrite.ca/o/jide-williams-17298305413"
+                  ? `${styles.active}`
+                  : `${styles.anchor}`
+              }
+              passHref
+              target="_blank"
+              rel="noreferrer"
+            >
+              Events
+            </a>
           </Link>
         </span>
         <span className={styles.link}>
-          <Link href="/blog">
+          {/* <Link href="/blog">
             <a
               className={
                 router.pathname == "/blog"
                   ? `${styles.active}`
                   : `${styles.anchor}`
               }
+            >
+              Blog
+            </a>
+          </Link> */}
+          <Link
+            href="https://medium.com/@jidewils_"
+            passHref
+            target="_blank"
+            rel="noreferrer"
+          >
+            <a
+              className={
+                router.pathname == "https://medium.com/@jidewils_"
+                  ? `${styles.active}`
+                  : `${styles.anchor}`
+              }
+              passHref
+              target="_blank"
+              rel="noreferrer"
             >
               Blog
             </a>
@@ -146,7 +185,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className={styles.link}>
-            <Link href="/events">
+            {/* <Link href="/events">
               <a
                 className={
                   router.pathname == "/events"
@@ -156,17 +195,56 @@ const Navbar = () => {
               >
                 Events
               </a>
+            </Link> */}
+            <Link
+              href="https://eventbrite.ca/o/jide-williams-17298305413"
+              passHref
+              target="_blank"
+              rel="noreferrer"
+            >
+              <a
+                className={
+                  router.pathname ==
+                  "https://eventbrite.ca/o/jide-williams-17298305413"
+                    ? `${styles.active}`
+                    : `${styles.anchor}`
+                }
+                passHref
+                target="_blank"
+                rel="noreferrer"
+              >
+                Events
+              </a>
             </Link>
           </div>
 
           <div className={styles.link}>
-            <Link href="/blog">
+            {/* <Link href="/blog">
               <a
                 className={
                   router.pathname == "/blog"
                     ? `${styles.active}`
                     : `${styles.anchor}`
                 }
+              >
+                Blog
+              </a>
+            </Link> */}
+            <Link
+              href="https://medium.com/@jidewils_"
+              passHref
+              target="_blank"
+              rel="noreferrer"
+            >
+              <a
+                className={
+                  router.pathname == "https://medium.com/@jidewils_"
+                    ? `${styles.active}`
+                    : `${styles.anchor}`
+                }
+                passHref
+                target="_blank"
+                rel="noreferrer"
               >
                 Blog
               </a>

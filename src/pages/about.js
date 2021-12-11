@@ -75,10 +75,10 @@ const About = () => {
             </div>
           </section>
 
-          <section className={styles.skills}>
+          <section className={styles.skilltools}>
             <div className={styles.wrap}>
               <div className={styles.testimonial}>
-                <h1 className={styles.title}>From Jake Jason Timm:</h1>
+                <h1 className={styles.title}>Testimonial</h1>
                 <div className={styles.msg}>
                   “We needed to validate our ideas, market-size, customer-market
                   fit and other important metrics and there was Jide telling us
@@ -92,20 +92,30 @@ const About = () => {
                 </div>
               </div>
               <div className={styles.nworthy}>
-                <h1 className={styles.title}>Noteworthy Skills</h1>
-                <div className={styles.info}>
-                  <p>
-                    SCRUM {"&"} Agile Methodology, Complete Product Lifecycle,
-                    Product Pricing, Creating User Personas and Journey Maps,
-                    Conducting User Interviews, Market Research and Hypothesis
-                    Validation, Design {"&"} UX Principles, Advanced usage of
-                    Project Management tools (Azure DevOps, Jira, Clickup,
-                    Asana, Trello, etc), Advanced usage of Google Apps
-                    (Analytics, Sheets, Docs, Slide, Calendar, Mail, etc),
-                    Advanced usage of Collaboration and Support tools (Figma,
-                    Miro, ProductBoard, InVision, Slack, Discord, Intercom,
-                    Salesforce, Mailchimp, Typeform, Airtable, etc)
-                  </p>
+                <h1 className={styles.title}>Skills {"&"} Tools</h1>
+                <div className={styles.contain}>
+                  <div className={styles.skills}>
+                    <h3 className={styles.subtitle}>Skills</h3>- SCRUM {"&"}{" "}
+                    Agile Methodology
+                    <br /> - Complete Product Lifecycle
+                    <br /> - Product Pricing
+                    <br /> - Creating User Personas and Journey Maps
+                    <br /> - Conducting User Interviews
+                    <br /> - Market Research and Validation
+                    <br /> - Design {"&"} UX Principles
+                  </div>
+
+                  <div className={styles.skills}>
+                    <h3 className={styles.subtitle}>Tools</h3>- Azure DevOps,
+                    Jira, Clickup, Asana, Trello {"&"} more
+                    <br />- Google Apps - Analytics, Sheets, Docs, Slide,
+                    Calendar, Mail {"&"} more
+                    <br />- Figma, Miro, ProductBoard, InVision, Slack, Discord,
+                    Intercom, Salesforce, Mailchimp, Airtable, Typeform {
+                      "&"
+                    }{" "}
+                    more.
+                  </div>
                 </div>
               </div>
             </div>
