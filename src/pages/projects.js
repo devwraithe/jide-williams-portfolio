@@ -1,4 +1,5 @@
 // import components
+import Head from "next/head";
 import Image from "next/image";
 import React, { useState } from "react";
 import Layout from "../components/layout/layout";
@@ -79,93 +80,97 @@ const Projects = (props) => {
   };
 
   return (
-    <div className={styles.prj}>
-      <Layout>
-        {/* header : open */}
-        <Header className={styles.header}>
-          <div className={styles.wrap}>Selected Projects</div>
-        </Header>
-        {/* header : open */}
+    <>
+      <Head>
+        <title>Jide Williams | Selected Projects</title>
+      </Head>
+      <div className={styles.prj}>
+        <Layout>
+          {/* header : open */}
+          <Header className={styles.header}>
+            <div className={styles.wrap}>Selected Projects</div>
+          </Header>
+          {/* header : open */}
 
-        {/* projects : open */}
-        <div className={styles.list}>
-          {projects.map((project) => (
-            <div
-              key={project.title}
-              className={styles.project}
-              onClick={() => expandModal(project)}
+          {/* projects : open */}
+          <div className={styles.list}>
+            {projects.map((project) => (
+              <div
+                key={project.title}
+                className={styles.project}
+                onClick={() => expandModal(project)}
+              >
+                <div className={styles.imgOuter}>
+                  <Image
+                    src={project.img}
+                    layout="responsive"
+                    alt={project.alt}
+                    height="70%"
+                    width="100%"
+                    objectFit="cover"
+                  />
+                </div>
+                <h2 className={styles.title}>{project.title}</h2>
+                <p className={styles.tags}>{project.tags}</p>
+              </div>
+            ))}
+            <Dialog
+              isOpen={modalIsOpen}
+              onDismiss={closeModal}
+              className={styles.modal}
             >
-              <div className={styles.imgOuter}>
-                <Image
-                  src={project.img}
-                  layout="responsive"
-                  alt={project.alt}
-                  height="70%"
-                  width="100%"
-                  objectFit="cover"
-                />
+              <div className={styles.closeIcon} onClick={closeModal}>
+                Close
               </div>
-              <h2 className={styles.title}>{project.title}</h2>
-              <p className={styles.tags}>{project.tags}</p>
-            </div>
-          ))}
-          <Dialog
-            isOpen={modalIsOpen}
-            onDismiss={closeModal}
-            className={styles.modal}
-          >
-            <div className={styles.closeIcon} onClick={closeModal}>
-              Close
-            </div>
-            <div className={styles.wrap}>
-              <div className="col-1">
-                <div className={styles.about}>
-                  <h3 className={styles.title}>
-                    About {selectedProject && selectedProject.title}
-                  </h3>
+              <div className={styles.wrap}>
+                <div className="col-1">
+                  <div className={styles.about}>
+                    <h3 className={styles.title}>
+                      About {selectedProject && selectedProject.title}
+                    </h3>
+                    <p className={styles.info}>
+                      {selectedProject && selectedProject.description}
+                    </p>
+                  </div>
+                  <div className={styles.role} style={{ marginTop: "1.7em" }}>
+                    <h3 className={styles.title}>My Role</h3>
+                    <p className={styles.info}>
+                      {selectedProject && selectedProject.role}
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.col2}>
+                  <h3 className={styles.title}>Deliverables</h3>
                   <p className={styles.info}>
-                    {selectedProject && selectedProject.description}
+                    <ul>
+                      {selectedProject &&
+                        selectedProject.deliverables.map((deliverable) => (
+                          <>
+                            <li style={{ marginTop: "10px" }} key={deliverable}>
+                              {deliverable}
+                            </li>
+                          </>
+                        ))}
+                    </ul>
+                    <p style={{ marginTop: "2.2em", fontSize: "1rem" }}>
+                      <b>Preview Link</b>
+                      {" - "}
+                      <a
+                        href={selectedProject && selectedProject.link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {selectedProject && selectedProject.link}
+                      </a>
+                    </p>
                   </p>
                 </div>
-                <div className={styles.role} style={{ marginTop: "1.7em" }}>
-                  <h3 className={styles.title}>My Role</h3>
-                  <p className={styles.info}>
-                    {selectedProject && selectedProject.role}
-                  </p>
-                </div>
               </div>
-              <div className={styles.col2}>
-                <h3 className={styles.title}>Deliverables</h3>
-                <p className={styles.info}>
-                  <ul>
-                    {selectedProject &&
-                      selectedProject.deliverables.map((deliverable) => (
-                        <>
-                          <li style={{ marginTop: "10px" }} key={deliverable}>
-                            {deliverable}
-                          </li>
-                        </>
-                      ))}
-                  </ul>
-                  <p style={{ marginTop: "2.2em", fontSize: "1rem" }}>
-                    <b>Preview Link</b>
-                    {" - "}
-                    <a
-                      href={selectedProject && selectedProject.link}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {selectedProject && selectedProject.link}
-                    </a>
-                  </p>
-                </p>
-              </div>
-            </div>
-          </Dialog>
-        </div>
-      </Layout>
-    </div>
-    // projects page : close
+            </Dialog>
+          </div>
+        </Layout>
+      </div>
+    </>
   );
 };
 

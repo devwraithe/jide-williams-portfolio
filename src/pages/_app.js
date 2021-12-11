@@ -1,10 +1,19 @@
-// styling
+// import components
+import Head from "next/head";
+// import styling
 import "../styles/globals.css";
 
-// func component
+// main component
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <meta name="viewport" content="viewport-fit=cover" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-// export
+// export component
 export default MyApp;

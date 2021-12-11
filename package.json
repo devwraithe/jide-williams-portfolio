@@ -1,9 +1,36 @@
 {
-  "name": "jidewils-portfolio",
+  "name": "jide-williams-portfolio",
   "version": "1.0",
-  "description": "portfolio for a senior product manager",
+  "description": "official portfolio website for a senior product manager - jide is a senior product manager, event host, bad singer and average cook in lagos - he is data-driven, detail-oriented and a problem-solver",
   "main": "src/pages/index.js",
   "private": true,
+  "license": "MIT",
+  "keywords": [
+    "product-manager",
+    "senior-product-manager",
+    "jide-williams",
+    "algorand",
+    "fybrr",
+    "storemapper"
+  ],
+  "author": {
+    "name": "Ibrahim Ibrahim",
+    "nickname": "Devwraithe",
+    "email": "ibrahimaibrahim851@outlook.com",
+    "url": "http://devwraithe.web.app"
+  },
+  "contributors": [
+    {
+      "name": "Ibrahim Ibrahim",
+      "email": "ibrahimaibrahim851@outlook.com",
+      "url": "https://devwraithe.web.app"
+    },
+    {
+      "name": "Jide Williams",
+      "email": "jidewils@gmail.com",
+      "url": "https://devwraithe.web.app"
+    }
+  ],
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",
