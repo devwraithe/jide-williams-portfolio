@@ -1,0 +1,28 @@
+{
+  "name": "jidewils-portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reach/dialog": "^0.16.2",
+    "micromodal": "^0.4.10",
+    "modali": "^1.2.0",
+    "next": "12.0.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-hooks-use-modal": "^2.1.0",
+    "react-modal": "^3.14.4",
+    "react-modal-dialog": "^4.0.7",
+    "react-skylight": "^0.5.1",
+    "reactjs-popup": "^2.0.5",
+    "sass": "^1.43.4"
+  },
+  "devDependencies": {
+    "eslint": "7",
+    "eslint-config-next": "12.0.3"
+  }
+}

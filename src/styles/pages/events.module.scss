@@ -1,0 +1,31 @@
+// import globals
+@import "../../styles/scss/globals";
+
+// events component
+.evt {
+  @include defxy;
+  @include padx;
+  .evtbrite {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  .ft {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  a {
+    color: $dark;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $gray;
+    transition: 0.3s all ease;
+  }
+}

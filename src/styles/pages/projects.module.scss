@@ -1,0 +1,107 @@
+// import globals.scss
+@import "../../styles/scss/globals.scss";
+
+// projects : open
+.prj {
+  .wrap {
+    margin-top: -0.5em;
+    margin-bottom: 1.5em;
+  }
+  .list {
+    @include media-min(lg-min) {
+      display: grid;
+      column-gap: 40px;
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 0;
+    }
+    margin-bottom: 5em;
+    .project {
+      margin-bottom: 3.5em;
+      .imgOuter {
+        background-color: $dark;
+        border: 1px solid $gray;
+      }
+      .title {
+        @include media-max(md-max) {
+          @include h1;
+        }
+        @include media-btw(lg-min, lg-max) {
+          @include h2;
+        }
+        @include media-min(xl-min) {
+          @include h1;
+        }
+        font-weight: $xbd;
+        margin-top: 25px;
+        margin-left: -1px;
+      }
+      .tags {
+        @include media-min(lg-min) {
+          margin-top: -1em;
+        }
+        @include media-max(sm-max) {
+          margin-top: -0.6em;
+          line-height: 170%;
+        }
+        margin-left: -1px;
+        @include media-max(xs-max) {
+          font-size: 1.1rem;
+        }
+        @include media-min(sm-min) {
+          font-size: 1.2rem;
+        }
+        font-weight: $sbd;
+      }
+    }
+    .project:hover {
+      cursor: pointer;
+    }
+  }
+}
+// projects page : close
+
+// project modals
+.modal {
+  border-radius: 1em;
+  position: relative;
+  .closeIcon {
+    position: absolute;
+    @include media-max(lg-max) {
+      right: 2em;
+    }
+    @include media-min(xl-min) {
+      right: 3em;
+    }
+    top: 1.8em;
+    font-size: $cap;
+    font-weight: $bld;
+  }
+  .closeIcon:hover {
+    cursor: pointer;
+  }
+  .wrap {
+    @include media-min(xl-min) {
+      padding: 2em 1.3em;
+      display: grid;
+      column-gap: 50px;
+      grid-template-columns: 1fr 1fr;
+    }
+    @include media-max(lg-max) {
+      margin-top: 3em;
+    }
+    .col2 {
+      @include media-max(lg-max) {
+        margin-top: 1.5em;
+      }
+    }
+    .title {
+      @include h5;
+      font-weight: $bld;
+    }
+    .info {
+      margin-top: -0.6em;
+      font-size: $cap;
+      line-height: 170%;
+    }
+  }
+}
