@@ -77,23 +77,40 @@ const About = () => {
 
           <section className={styles.skilltools}>
             <div className={styles.wrap}>
-              <div className={styles.testimonial}>
-                <h1 className={styles.title}>Testimonial</h1>
-                <div className={styles.msg}>
-                  “We needed to validate our ideas, market-size, customer-market
-                  fit and other important metrics and there was Jide telling us
-                  not to waste our time or effort on our light bulb idea! A few
-                  weeks and some global updates later, we realized we had made
-                  the best decision not to go with our emotions. Till date, I
-                  always get his counsel before building anything!”
+              <div className={styles.containOne}>
+                <div className={styles.testimonial}>
+                  <h1 className={styles.title}>Testimonial</h1>
+                  <div className={styles.msg}>
+                    “We needed to validate our ideas, market-size,
+                    customer-market fit and other important metrics and there
+                    was Jide telling us not to waste our time or effort on our
+                    light bulb idea! A few weeks and some global updates later,
+                    we realized we had made the best decision not to go with our
+                    emotions. Till date, I always get his counsel before
+                    building anything!”
+                  </div>
+                  <div className={styles.author}>
+                    - Jake Jason Timm - Founder and CEO, Hakuna Technologies, NL
+                  </div>
                 </div>
-                <div className={styles.author}>
-                  - Jake Jason Timm - Founder and CEO, Hakuna Technologies, NL
+                <div className={styles.education}>
+                  <h1 className={styles.title}>
+                    Education {"&"} Certifications
+                  </h1>
+                  <div className={styles.msg}>
+                    <p>
+                      - Certificate in Information Technology | British Computer
+                      Society (BCS) | Aug. 2021
+                    </p>
+                    <p>- MBA | Nexford University | Dec. 2020</p>
+                    <p>- PMP | Project Management Institute (PMI) | Dec 2020</p>
+                    <p>- B.Sc Geography | UNILAG | May 2011</p>
+                  </div>
                 </div>
               </div>
               <div className={styles.nworthy}>
                 <h1 className={styles.title}>Skills {"&"} Tools</h1>
-                <div className={styles.contain}>
+                <div className={styles.containTwo}>
                   <div className={styles.skills}>
                     <h3 className={styles.subtitle}>Skills</h3>- SCRUM {"&"}{" "}
                     Agile Methodology

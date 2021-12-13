@@ -6,7 +6,13 @@ const Footer = () => {
   return (
     <footer className={styles.ft}>
       &copy;Jide Williams | Sr Product Manager |{" "}
-      <a href="https://devwraithe.web.app" className={styles.link}>
+      <a
+        href="https://drive.google.com/file/d/1ERcBrpNOQvSPVdx27nKngIBYYLWc_BAa/view?usp=sharing"
+        className={styles.link}
+        passHref
+        target="_blank"
+        rel="noreferrer"
+      >
         View Resume
       </a>
     </footer>

@@ -98,13 +98,14 @@
         grid-column-gap: 80px;
         grid-template-columns: 1fr 1fr;
       }
-      .testimonial {
+      .testimonial,
+      .education {
         font-weight: $sbd;
         text-align: justify;
         line-height: 170%;
 
         .title {
-          margin-bottom: 1em;
+          margin-bottom: 0.85em;
         }
         .msg {
           @include h6;
@@ -116,9 +117,12 @@
           text-align: left;
         }
       }
+      .education {
+        margin-top: 3.5em;
+      }
       .nworthy {
         @include media-max(sm-max) {
-          padding-top: 4em;
+          padding-top: 2em;
         }
         @include media-btw(md-min, md-max) {
           padding-top: 5em;
@@ -126,14 +130,13 @@
         font-size: $def;
         line-height: 170%;
         font-weight: $sbd;
-        // text-align: justify;
         .skills {
-          margin-top: 2em;
+          margin-top: 1.85em;
         }
         .title {
           margin-bottom: 1em;
         }
-        .contain {
+        .containTwo {
           color: $gray-100;
 
           .subtitle {
