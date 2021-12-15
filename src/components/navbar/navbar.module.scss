@@ -12,6 +12,10 @@
   .brand {
     color: $dark;
     font-weight: $sbd;
+    .logoLink {
+      text-decoration: none;
+      color: $dark;
+    }
   }
 
   // large devices
