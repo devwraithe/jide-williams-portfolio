@@ -1,0 +1,53 @@
+{
+  "name": "jide-williams-portfolio",
+  "version": "1.0",
+  "description": "official portfolio website for a senior product manager - jide is a senior product manager, event host, bad singer and average cook in lagos - he is data-driven, detail-oriented and a problem-solver",
+  "main": "src/pages/index.js",
+  "private": true,
+  "license": "MIT",
+  "keywords": [
+    "product-manager",
+    "senior-product-manager",
+    "jide-williams",
+    "algorand",
+    "fybrr",
+    "storemapper"
+  ],
+  "author": {
+    "name": "Ibrahim Ibrahim",
+    "nickname": "Devwraithe",
+    "email": "ibrahimaibrahim851@outlook.com",
+    "url": "http://devwraithe.web.app"
+  },
+  "contributors": [
+    {
+      "name": "Ibrahim Ibrahim",
+      "email": "ibrahimaibrahim851@outlook.com",
+      "url": "https://devwraithe.web.app"
+    },
+    {
+      "name": "Jide Williams",
+      "email": "jidewils@gmail.com",
+      "url": "https://devwraithe.web.app"
+    }
+  ],
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reach/dialog": "^0.16.2",
+    "locomotive-scroll": "^4.1.3",
+    "next": "12.0.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-locomotive-scroll": "^0.2.0",
+    "sass": "^1.43.4"
+  },
+  "devDependencies": {
+    "eslint": "7",
+    "eslint-config-next": "12.0.3"
+  }
+}

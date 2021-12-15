@@ -1,0 +1,205 @@
+// import globals
+@import "../../styles/scss/globals.scss";
+
+// about component
+.abt {
+  @include defxy;
+  .wrap {
+    margin-top: -0.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .brief {
+    text-align: center;
+    // margin-top: -3em;
+    .title {
+      @include h2;
+      font-weight: $xbd;
+    }
+    .subtitle {
+      @include media-max(xs-max) {
+        @include h5;
+      }
+      @include media-min(sm-min) {
+        @include h4;
+      }
+      font-weight: $sbd;
+      line-height: 160%;
+      color: $gray-100;
+      @include media-max(sm-max) {
+        margin-top: -0.3em;
+      }
+      @include media-min(md-min) {
+        margin-top: -0.7em;
+      }
+    }
+  }
+
+  .bio {
+    $padt: 9em;
+    @include media-max(sm-max) {
+      padding-top: 7em;
+    }
+    @include media-min(md-min) {
+      padding: $padt 7vw 0 7vw;
+    }
+    @include media-min(lg-min) {
+      padding: $padt 0 0 0;
+    }
+    @include media-min(xl-min) {
+      padding: $padt 2vw 0 2vw;
+    }
+    .wrap {
+      display: grid;
+      align-items: center;
+      @include media-min(lg-min) {
+        grid-column-gap: 60px;
+        grid-template-columns: 1fr 1fr;
+      }
+      .details {
+        text-align: justify;
+        font-size: 1rem;
+        font-weight: $sbd;
+        line-height: 160%;
+
+        .title {
+          margin-bottom: 1.3em;
+        }
+
+        .info {
+          color: $gray-100;
+        }
+      }
+      .img {
+        @include media-max(md-max) {
+          margin-top: 1.5em;
+        }
+      }
+    }
+  }
+
+  .skilltools {
+    $padt: 9em;
+    @include media-max(sm-max) {
+      padding-top: 5em;
+    }
+    @include media-min(md-min) {
+      padding: 6em 7vw 0 7vw;
+    }
+    @include media-min(lg-min) {
+      padding: $padt 0 0 0;
+    }
+    @include media-min(xl-min) {
+      padding: $padt 2vw 0 2vw;
+    }
+    .wrap {
+      display: grid;
+      @include media-min(lg-min) {
+        grid-column-gap: 80px;
+        grid-template-columns: 1fr 1fr;
+      }
+      .testimonial,
+      .education {
+        font-weight: $sbd;
+        text-align: justify;
+        line-height: 170%;
+
+        .title {
+          margin-bottom: 0.85em;
+        }
+        .msg {
+          @include h6;
+          font-weight: $sbd;
+        }
+        .author {
+          margin-top: 1.2em;
+          color: $gray;
+          text-align: left;
+        }
+      }
+      .education {
+        margin-top: 3.5em;
+      }
+      .nworthy {
+        @include media-max(sm-max) {
+          padding-top: 2em;
+        }
+        @include media-btw(md-min, md-max) {
+          padding-top: 5em;
+        }
+        font-size: $def;
+        line-height: 170%;
+        font-weight: $sbd;
+        .skills {
+          margin-top: 1.85em;
+        }
+        .title {
+          margin-bottom: 1em;
+        }
+        .containTwo {
+          color: $gray-100;
+
+          .subtitle {
+            color: $dark;
+            margin-bottom: 0.5em;
+            margin-top: -0.4em;
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    text-align: center;
+    $padt: 8.5em;
+    @include media-max(sm-max) {
+      padding: $padt 0;
+    }
+    @include media-min(md-min) {
+      padding: $padt 7vw;
+    }
+    @include media-min(lg-min) {
+      padding: $padt 0;
+    }
+    @include media-min(xl-min) {
+      padding: $padt 2vw;
+    }
+
+    .title {
+      @include h2;
+      font-weight: $xbd;
+    }
+
+    .info {
+      line-height: 170%;
+      margin-top: -1.1%;
+      font-weight: $sbd;
+    }
+
+    .cbr {
+      @include media-max(xs-max) {
+        display: none;
+      }
+    }
+
+    .links {
+      text-align: center;
+      margin-top: 1.3em;
+
+      .link {
+        color: $gray-100;
+        font-weight: $bld;
+      }
+      .link:hover {
+        color: $dark;
+        transition: 0.5s all ease;
+        text-decoration: none;
+      }
+      .split {
+        font-weight: $sbd;
+        margin-left: 0.35em;
+        margin-right: 0.35em;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+// import globals
+@import "../../styles/scss/globals.scss";
+
+// header component
+.hdr {
+  text-align: center;
+  font-family: "Oswald";
+
+  .wrap {
+    @include media-max(md-max) {
+      padding: 9em 0.4em 6em 0.4em;
+    }
+    @include media-min(lg-min) {
+      padding: 8em 3em 4em 3em;
+    }
+  }
+
+  .title {
+    @include media-max(xs-max) {
+      line-height: 165%;
+      font-size: $h2;
+    }
+    @include media-min(sm-min) {
+      line-height: 165%;
+      font-size: $h1;
+    }
+    @include media-min(md-min) {
+      line-height: 155%;
+      font-size: $d6;
+    }
+    @include media-min(lg-min) {
+      font-size: $d5;
+    }
+  }
+}

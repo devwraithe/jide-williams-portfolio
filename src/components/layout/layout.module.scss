@@ -1,0 +1,8 @@
+// import globals
+@import "../../styles/scss/globals";
+
+// layout
+.lyt {
+  @include padx;
+  margin: 0;
+}

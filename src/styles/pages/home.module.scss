@@ -1,0 +1,107 @@
+// import globals
+@import "../../styles/scss/globals.scss";
+
+// home component
+.hm {
+  @include defxy;
+  .wrap {
+    margin-top: -0.5em;
+    margin-bottom: 1.5em;
+  }
+  .hbr {
+    @include media-max(lg-max) {
+      display: none;
+    }
+  }
+
+  .experience {
+    text-align: center;
+    // background-color: gray;
+    .wrap {
+      display: grid;
+      @include media-min(md-min) {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1em;
+      }
+      @include media-min(lg-min) {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 4em;
+      }
+      @include media-min(xl-min) {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 8em;
+      }
+      @include media-max(sm-max) {
+        grid-template-columns: none;
+      }
+      .item {
+        // padding: 7em 0;
+        padding: 2em 0;
+
+        .title {
+          @include h4;
+          margin-top: 1.2em;
+          font-weight: $xbd;
+        }
+      }
+      .one {
+        background-color: #7584f2;
+      }
+      .two {
+        background-color: #ffc250;
+      }
+      .three {
+        background-color: #fed57a;
+      }
+      .four {
+        background-color: #83c029;
+      }
+    }
+  }
+
+  .testimonial {
+    $padt: 5em;
+    .wrap {
+      @include media-max(xs-max) {
+        padding: $padt 0;
+      }
+      @include media-min(sm-min) {
+        padding: $padt 8vw;
+      }
+      @include media-min(md-min) {
+        padding: $padt 11.5vw;
+      }
+      @include media-min(lg-min) {
+        padding: $padt 17vw;
+      }
+      @include media-min(xl-min) {
+        padding: $padt 20vw;
+      }
+      .msg {
+        @include h6;
+        text-align: justify;
+        font-weight: $sbd;
+        line-height: 170%;
+      }
+      .author {
+        margin-top: 1.2em;
+        color: $gray;
+        font-weight: $sbd;
+        font-size: $def;
+        text-align: left;
+        line-height: 170%;
+      }
+    }
+  }
+
+  .about {
+    text-align: center;
+    padding-bottom: 10em;
+    .btn {
+      @include button;
+    }
+    .btn:hover {
+      @include button-hover;
+    }
+  }
+}

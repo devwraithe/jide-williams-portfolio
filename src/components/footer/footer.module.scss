@@ -1,0 +1,23 @@
+// import globals
+@import "../../styles/scss/globals";
+
+// footer component
+.ft {
+  @include pady;
+  margin: 0;
+  color: $gray;
+  font-size: $def;
+  font-weight: $sbd;
+  line-height: 185%;
+  text-align: center;
+  .link {
+    color: $dark;
+    text-decoration: none;
+  }
+  .link:focus,
+  .link:hover {
+    color: $gray;
+    transition: 0.5s all ease;
+    text-decoration: underline;
+  }
+}
