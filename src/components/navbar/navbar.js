@@ -23,7 +23,11 @@ const Navbar = () => {
 
   return (
     <nav className={styles.nav}>
-      <div className={styles.brand}>Jide Williams</div>
+      <div className={styles.brand}>
+        <Link href="/" passHref>
+          <a className={styles.logoLink}>Jide Williams</a>
+        </Link>
+      </div>
       {/* large devices */}
       <div className={styles.smNone}>
         <span className={styles.link}>
