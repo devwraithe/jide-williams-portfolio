@@ -98,6 +98,11 @@ const About = () => {
                     Education {"&"} Certifications
                   </h1>
                   <div className={styles.msg}>
+                    <p>- Professional Scrum Master I | Scrum.org | Dec. 2021</p>
+                    <p>
+                      - Professional Scrum Product Owner I | Scrum.org | Dec.
+                      2021
+                    </p>
                     <p>
                       - Certificate in Information Technology | British Computer
                       Society (BCS) | Aug. 2021
