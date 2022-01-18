@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className={styles.ft}>
       &copy;Jide Williams | Sr Product Manager |{" "}
       <a
-        href="https://drive.google.com/file/d/1VesAxp0Oz16wwZmVcyKHCcPgySYIq1_o/view?usp=sharing"
+        href="https://drive.google.com/file/d/190IGC0wu_zmTLU7al0qUKgJsquNUh--h/view?usp=sharing"
         className={styles.link}
         passHref
         target="_blank"
